@@ -1,0 +1,305 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <title>Plataforma Académica – Planeación del Desarrollo</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<body> 
+ 
+<div class="layout"> 
+ 
+  <!-- MENÚ --> 
+  <div class="sidebar"> 
+    <h2>Planeación<br>del Desarrollo</h2> 
+    <p style="font-size:13px; opacity:0.85;">Ejercicio académico</p>
+    <p style="font-size:13px; opacity:0.85;">Desarrollado por: John Alejandro Pulgarín Franco</p>
+ 
+    <!-- <a href="#identificacion">1. Identificación</a> -->
+    <a href="#linea">1. Línea estratégica</a> 
+    <a href="#diagnostico">2. Diagnóstico</a> 
+    <a href="#objetivos">3. Objetivos</a> 
+    <a href="#resultados">4. Indicadores de resultado</a> 
+    <a href="#productos">5. Indicadores de producto</a> 
+  </div> 
+ 
+  <!-- CONTENIDO --> 
+  <div class="content" id="documento"> 
+  
+  <p>Esta plataforma permite a los estudiantes un acercamiento básico para la elaboración del plan de desarrollo territorial</p>
+ 
+    <!--<section id="identificacion"> 
+      <h2>1. Identificación</h2> 
+ 
+      <label>Elaboran</label> 
+      <input type="text" placeholder="Nombre de los estudiantes"> 
+ 
+      <label>Entidad territorial</label> 
+      <input type="text" placeholder="Municipio / Departamento"> 
+    </section> -->
+ 
+    <section id="linea", class="print-section"> 
+      <h2>1. Línea estratégica</h2> 
+ 
+      <label>Nombre de la línea estratégica</label> 
+      <input type="text" placeholder="Ej. Gestión ambiental sostenible"> 
+ 
+      <label>Descripción breve</label> 
+      <textarea rows="5" placeholder="Propósito y alcance de la línea estratégica"></textarea> 
+ 
+      <label>Sector</label> 
+      <select> 
+        <option>Seleccione un sector</option> 
+<option>Información estadística</option>  
+<option>Justicia y del derecho</option>  
+<option>Agricultura y desarrollo rural</option> <option>Educativo</option>  
+<option>Salud y protección social</option>  
+<option>Minas y energía</option>  
+<option>Educación</option>  
+<option>Tecnologías de la información y las comunicaciones</option> <option>Transporte</option>  
+<option>Organismos de control</option> 
+<option>Ambiente y desarrollo sostenible</option> 
+<option>Cultura</option>  
+<option>Comercio, industria y turismo</option> 
+<option>Trabajo</option>  
+<option>Ciencia, tecnología e innovación</option>  
+<option>Vivienda, ciudad y territorio</option> 
+<option>Inclusión social y reconciliación</option> 
+<option>Deporte y recreación</option>  
+<option>Gobierno territorial</option> 
+      </select> 
+ 
+<div class="center"> 
+  <button class="btn" onclick="imprimirSeccion(this)"> 
+    Generar PDF 
+  </button> 
+</div> 
+    </section> 
+ 
+    <section id="diagnostico", class="print-section"> 
+      <h2>2. Diagnóstico</h2> 
+      <p>Identifique los efectos (consecuencias del problema) y las causas (factores que lo generan o agravan). Esto permite construir una visión lógica del problema para definir estrategias de intervención adecuadas.</p> 
+
+<section class= "problema">
+  <label>Problema central</label>
+      <input type="text" placeholder="">
+      
+</section>
+
+<section class="causas">
+  <label>Causa 1</label>
+      <input data-campo="Causa 1" placeholder="Causa 1">
+
+<label>Causa 2</label>
+      <input data-campo="Causa 2" placeholder="Causa 2">
+        
+ <label>Causa 3</label>
+      <input data-campo="Causa 3" placeholder="Causa 3">
+        
+<label>Causa 4</label>
+      <input data-campo="Causa 4" placeholder="Causa 4">
+
+<div class="center">
+  <button class="btn" onclick="agregarFila(this)">Agregar</button>
+</div>
+
+<table>
+  <thead>
+    <tr>
+  <th>Causa 1</th>
+  <th>Causa 2</th>
+  <th>Causa 3</th>
+  <th>Causa 4</th>
+</tr>
+</thead>
+<tbody class="tabla-dinamica"></tbody>
+</table>
+</section>
+
+<section class="efectos">
+<label>Efecto 1</label>
+      <input data-campo="Efecto 1" placeholder="Efecto 1">
+
+<label>Efecto 2</label>
+      <input data-campo="Efecto 2" placeholder="Efecto 2">
+        
+ <label>Efecto 3</label>
+      <input data-campo="Efecto 3" placeholder="Efecto 3">
+        
+<label>Efecto 4</label>
+      <input data-campo="Efecto 4" placeholder="Efecto 4">
+      
+<div class="center">
+  <button class="btn" onclick="agregarFila(this)">Agregar</button>
+</div>
+      
+<table>
+<thead>
+<tr>
+  <th>Efecto 1</th>
+  <th>Efecto 2</th>
+  <th>Efecto 3</th>
+  <th>Efecto 4</th>
+</tr>
+</thead>
+<tbody class="tabla-dinamica"></tbody>
+</table>
+</section>
+
+<div class="center"> 
+  <button class="btn" onclick="imprimirSeccion(this)"> 
+    Generar PDF 
+  </button> 
+</div> 
+    </section> 
+ 
+    <section id="objetivos", class="print-section"> 
+      <h2>3. Objetivos</h2> 
+      <p>(Sección a desarrollar)</p> 
+ 
+<div class="center"> 
+  <button class="btn" onclick="imprimirSeccion(this)"> 
+    Generar PDF 
+  </button> 
+</div> 
+    </section> 
+ 
+    <section id="resultado",class="print-section"> 
+      <h2>4. Indicadores de resultado</h2> 
+<p>Con base en la descripción del problema, proponga una alternativa de intervención a la cual le asigne un indicador de resultado (siga el ejemplo de SisPT: <a href="https://sispt.dnp.gov.co/diagnostico/default-diagnostico" target=“_blank” >https://sispt.dnp.gov.co/diagnostico/default-diagnostico</a></p> 
+<p>A continuación diligencie cada uno de los campos y de clic en agregar, una vez agregada usted puede eliminarla si la quiere modificar</p>
+
+<label>Nombre del indicador de resultado</label>
+      <input data-campo="Indicador de resultado" placeholder="Ej. Afiliados al SGSSS">
+
+<label>Objetivo</label>
+      <input data-campo="Objetivo" placeholder="A la vibora">
+
+<label>Meta</label>
+      <input data-campo="Meta" placeholder="Poner un número">
+        
+ <label>Unidad de medida</label>
+      <input data-campo="Unidad de medida" placeholder="Unidad de medida. Ej. Personas">
+        
+<label>Responsable</label>
+      <input data-campo="Responsable" placeholder="Ej. Secretaría de Salud">
+      
+<!-- <div style="display:grid; grid-template-columns: repeat(5,1fr); gap:10px;">
+  <input id="ind" placeholder="Indicador">
+  <input id="obj" placeholder="Objetivo">
+  <input id="meta" placeholder="Meta">
+  <input id="unidad" placeholder="Unidad">
+  <input id="resp" placeholder="Responsable">
+</div> -->
+
+<div class="center">
+  <button class="btn" onclick="agregarFila(this)">Agregar</button>
+</div>
+
+<table>
+<thead>
+<tr>
+  <th>Indicador de resultado</th>
+  <th>Objetivo</th>
+  <th>Meta</th>
+  <th>Unidad de medida</th>
+  <th>Responsable</th>
+  <th>Acción</th>
+</tr>
+</thead>
+<tbody class="tabla-dinamica"></tbody>
+</table>
+
+<div class="center">
+  <button class="btn" onclick="imprimirSeccion(this)">Generar PDF</button>
+</div>
+</section>
+
+    </section> 
+ 
+    <section id="productos", class="print-section"> 
+      <h2>5. Indicadores de producto</h2> 
+<p>Para el programa, producto e indicador producto puede basarse en el documento adjunto de SisPT <a href="https://www.dnp.gov.co/LaEntidad_/subdireccion-general-inversiones-seguimiento-evaluacion/direccion-proyectos-informacion-para-inversion-publica/Paginas/catalagos.aspx" target=“_blank” >https://www.dnp.gov.co/LaEntidad_/subdireccion-general-inversiones-seguimiento-evaluacion/direccion-proyectos-informacion-para-inversion-publica/Paginas/catalagos.aspxhttps://sispt.dnp.gov.co/diagnostico/default-diagnostico</a></p> 
+
+<label>Nombre producto</label>
+      <input data-campo="Producto" placeholder="Ej. Servicio de afiliaciones al régimen subsidiado del Sistema General de Seguridad Social">
+      
+<label>Nombre del indicador de producto</label>
+      <input data-campo="Indicador" placeholder="Ej. Personas afiliadas al régimen subsidiado">
+
+<label>Meta</label>
+      <input data-campo="Meta" placeholder="Poner un número">
+        
+ <label>Unidad de medida</label>
+      <input data-campo="Unidad de medida" placeholder="Unidad de medida. Ej. Personas">
+        
+<label>Responsable</label>
+      <input data-campo="Responsable" placeholder="Ej. Secretaría de Salud">
+
+<div class="center">
+  <button class="btn" onclick="agregarFila(this)">Agregar</button>
+</div>
+
+<table>
+<thead>
+<tr>
+  <th>Producto</th>
+  <th>Indicador de producto</th>
+  <th>Meta</th>
+  <th>Unidad de medida</th>
+  <th>Responsable</th>
+  <th>Acción</th>
+</tr>
+</thead>
+<tbody class="tabla-dinamica"></tbody>
+</table>
+ 
+<div class="center"> 
+  <button class="btn" onclick="imprimirSeccion(this)"> 
+    Generar PDF 
+  </button> 
+</div> 
+    </section> 
+ 
+    <div class="center"> 
+      <button class="btn" onclick="window.print()">Generar PDF</button> 
+    </div> 
+ 
+  </div> 
+</div> 
+<script>
+
+function agregarFila(boton) {
+  const seccion = boton.closest("section");
+  const inputs = seccion.querySelectorAll("[data-campo]");
+  const tabla = seccion.querySelector(".tabla-dinamica");
+
+  const fila = document.createElement("tr");
+
+  inputs.forEach(input => {
+    const td = document.createElement("td");
+    td.textContent = input.value;
+    fila.appendChild(td);
+    input.value = "";
+  });
+
+  const tdAccion = document.createElement("td");
+  tdAccion.innerHTML = `<button onclick="this.closest('tr').remove()">Eliminar</button>`;
+  fila.appendChild(tdAccion);
+
+  tabla.appendChild(fila);
+}
+
+
+function imprimirSeccion(boton) { 
+  document.querySelectorAll('.print-section') 
+    .forEach(sec => sec.classList.remove('print-section')); 
+ 
+  const seccion = boton.closest('section'); 
+  seccion.classList.add('print-section'); 
+ 
+  window.print(); 
+} 
+</script> 
+ 
+</body> 
+</html> 
